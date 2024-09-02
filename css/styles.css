@@ -36,11 +36,39 @@ nav ul li a {
 }
 
 main {
-    padding: 20px;
+    padding: 0px 125px;
+}
+
+section.content {
+    display: flex;
+    gap: 20px;
+}
+
+.page1-layout .left-column {
+    flex: 3;
+}
+
+.page1-layout .right-column {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.page3-layout .left-column {
+    flex: 1;
+    padding-left: 100px;
+}
+
+.page3-layout .right-column {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding-left: 100px;
+    border-radius: 5px;
 }
 
 footer {
-    background-color: #333;
+    background-color: rgb(87, 9, 9);
     color: #fff;
     text-align: center;
     padding: 10px 0;
