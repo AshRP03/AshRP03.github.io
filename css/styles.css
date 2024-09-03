@@ -4,6 +4,7 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    background-image: url('../images/endless-constellation.png');
 }
 
 header {
@@ -50,7 +51,6 @@ section.content {
 
 .page1-layout .right-column {
     flex: 1;
-    background-color: #f4f4f4;
     padding: 10px;
     border-radius: 5px;
 }
@@ -62,7 +62,6 @@ section.content {
 
 .page3-layout .right-column {
     flex: 1;
-    background-color: #f4f4f4;
     padding-left: 100px;
     border-radius: 5px;
 }
