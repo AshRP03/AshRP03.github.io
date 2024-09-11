@@ -3,8 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI-Powered Insights</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Ashwin Parameswaran's Website</title>
+    
+    <!-- Default Dark Mode -->
+    <link rel="stylesheet" href="css/darkmode.css" id="dark-theme">
+
+    <!-- Aggie Mode (Initially Disabled) -->
+    <link rel="stylesheet" href="css/aggiemode.css" id="aggie-theme" disabled>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -21,10 +28,21 @@
         </nav>
     </header>
 
+    <button id="theme-toggle" class="btn center-button">Hey, what does this do?</button>
+
     <main>
         <h2>Understanding AI and Its Applications</h2>
-        <p>Artificial Intelligence (AI) is reshaping the world, and through projects at Texas A&M and personal research, I’ve had the opportunity to explore cutting-edge AI technologies such as Transformers, Computer Vision, and their applications in real-world projects.</p>
-
+        <p>Artificial Intelligence (AI) is reshaping the world, and through projects at Texas A&M and personal research, 
+            I’ve had the opportunity to explore cutting-edge AI technologies such as Transformers, Computer Vision, and 
+            their applications in real-world projects. This page, in fact, is a testament to that, as it was created with
+            ChatGPT-4o only with my home page's html file,a CSS stylesheet, and the carefully crafted prompt below:</p>
+        <p>--</p>
+        <p style="font-style: italic; font-size: 10pt; font-weight: bold;">
+            "Attached above is some code that shows an example of one of the pages for my personal website, and its corresponding
+            CSS stylesheet. Using the information above, as well as information you have learned about me through various
+            previous conversations with this chatbot, create me a brand new page for my website, fitting in with the rest of the
+            website, and providing value outside of my existing, landing, portfolio, resume, and service page."
+        </p>
         <section class="content page3-layout">
             <div class="left-column">
                 <h4>AI in Computer Vision</h4>
@@ -43,9 +61,9 @@
                 <h4>Interactive Learning</h4>
                 <p>This page aims to showcase practical AI projects and research through a user-friendly, interactive format. Here are some of the areas you can explore:</p>
                 <ul>
-                    <li><a href="https://github.com/AshRP03/ISIC2018_Seg_Research_Proj" target="_blank">Medical Image Segmentation Project</a></li>
-                    <li><a href="https://github.com/UARK-AICV/MEGANet" target="_blank">Edge-Guided Attention Model</a></li>
-                    <li><a href="https://transformer-explained.com" target="_blank">Learn about Transformers</a></li>
+                    <li><a href="https://github.com/AshRP03/ISIC2018_Seg_Research_Proj" target="_blank">My Personal Medical Image Segmentation Project</a></li>
+                    <li><a href="https://github.com/UARK-AICV/MEGANet" target="_blank">Edge-Guided Attention Model for Image Segmentation</a></li>
+                    <li><a href="https://youtu.be/bCz4OMemCcA?si=tcoTGut5Rpx_xWtB" target="_blank">How I Learned About The Transformer & Attention</a></li>
                 </ul>
         
                 <h4>AI for Automotive Systems</h4>
@@ -61,5 +79,39 @@
     <footer>
         <p>&copy; 2024 Ashwin Parameswaran</p>
     </footer>
+
+    <!-- JavaScript to Toggle Stylesheets -->
+    <script>
+        const toggleButton = document.getElementById('theme-toggle');
+        const aggieTheme = document.getElementById('aggie-theme');
+        const darkTheme = document.getElementById('dark-theme');
+    
+        function applySavedTheme() {
+            const savedTheme = localStorage.getItem('theme');
+    
+            if (savedTheme === 'dark') {
+                darkTheme.disabled = false;
+                aggieTheme.disabled = true;
+            } else {
+                darkTheme.disabled = true;
+                aggieTheme.disabled = false;
+            }
+        }
+    
+        applySavedTheme();
+    
+        toggleButton.addEventListener('click', () => {
+            if (darkTheme.disabled) {
+                darkTheme.disabled = false;
+                aggieTheme.disabled = true;
+                localStorage.setItem('theme', 'dark');
+            } else {
+                darkTheme.disabled = true;
+                aggieTheme.disabled = false;
+                localStorage.setItem('theme', 'aggie');
+            }
+        });
+    </script>
+
 </body>
 </html>

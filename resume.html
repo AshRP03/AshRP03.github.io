@@ -3,8 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ashwin Parameswaran's Resume</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Ashwin Parameswaran's Website</title>
+    
+    <!-- Default Dark Mode -->
+    <link rel="stylesheet" href="css/darkmode.css" id="dark-theme">
+
+    <!-- Aggie Mode (Initially Disabled) -->
+    <link rel="stylesheet" href="css/aggiemode.css" id="aggie-theme" disabled>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -20,6 +27,8 @@
             </ul>
         </nav>
     </header>
+
+    <button id="theme-toggle" class="btn center-button">Hey, what does this do?</button>
 
     <main>
         <h2>Resume - <a style="font-size: 18px;" href="../images/RESUME_A.pdf" download="AParamResume">Download Here</a></h2>
@@ -91,6 +100,39 @@
     <footer>
         <p>&copy; 2024 Ashwin Parameswaran</p>
     </footer>
+
+    <!-- JavaScript to Toggle Stylesheets -->
+    <script>
+        const toggleButton = document.getElementById('theme-toggle');
+        const aggieTheme = document.getElementById('aggie-theme');
+        const darkTheme = document.getElementById('dark-theme');
+    
+        function applySavedTheme() {
+            const savedTheme = localStorage.getItem('theme');
+    
+            if (savedTheme === 'dark') {
+                darkTheme.disabled = false;
+                aggieTheme.disabled = true;
+            } else {
+                darkTheme.disabled = true;
+                aggieTheme.disabled = false;
+            }
+        }
+    
+        applySavedTheme();
+    
+        toggleButton.addEventListener('click', () => {
+            if (darkTheme.disabled) {
+                darkTheme.disabled = false;
+                aggieTheme.disabled = true;
+                localStorage.setItem('theme', 'dark');
+            } else {
+                darkTheme.disabled = true;
+                aggieTheme.disabled = false;
+                localStorage.setItem('theme', 'aggie');
+            }
+        });
+    </script>
 
 </body>
 </html>

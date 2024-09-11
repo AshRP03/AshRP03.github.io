@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    background-image: url('../images/endless-constellation.png');
+}
+
+header {
+    background-image: url('../images/IMG_0389.jpeg');
+    background-size: cover;
+    background-position: center center;
+    height: 225px;
+    color: #fff;
+    padding: 20px 25px;
+    text-align: left;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 50px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffeb3b;
+}
+
+.center-button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+#theme-toggle {
+    background-color: rgb(87, 9, 9);
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main {
+    padding: 0px 125px;
+}
+
+section.content {
+    display: flex;
+    gap: 20px;
+}
+
+.page1-layout .left-column {
+    flex: 3;
+}
+
+.page1-layout .right-column {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.page2-layout .left-column,
+.page2-layout .middle-column,
+.page2-layout .right-column {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.page3-layout .left-column {
+    flex: 1;
+    padding-left: 100px;
+}
+
+.page3-layout .right-column {
+    flex: 2;
+    padding-left: 100px;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: rgb(87, 9, 9);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+}
+
+button, .btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
