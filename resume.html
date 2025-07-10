@@ -1,139 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ashwin Parameswaran's Website</title>
-    
-    <!-- Default Dark Mode -->
-    <link rel="stylesheet" href="css/darkmode.css" id="dark-theme">
-
-    <!-- Aggie Mode (Initially Disabled) -->
-    <link rel="stylesheet" href="css/aggiemode.css" id="aggie-theme" disabled>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume – Ashwin Parameswaran</title>
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-    <header>
-        <h1>Howdy! I'm Ashwin Parameswaran.</h1>
-        <h3>Texas A&M Computer Science '26</h3>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="service.html">Service</a></li>
-                <li><a href="ai.html">AI Insights</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <h1>Resume</h1>
+    <h3>Download & Highlights</h3>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="service.html">Service</a></li>
+        <li><a href="honors.html">Honors</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <button id="theme-toggle" class="btn center-button">Hey, what does this do?</button>
+  <main class="content">
+    <section class="resume-download">
+      <a class="btn" href="assets/resume.pdf" download="Ashwin_Parameswaran_Resume">Download PDF Version</a>
+    </section>
 
-    <main>
-        <h2>Resume - <a style="font-size: 18px;" href="../images/RESUME_A.pdf" download="AParamResume">Download Here</a></h2>
-        <h4>Texas A&M University, College Station, TX – College of Engineering, Class of '26</h4>
-        <ul>
-            <li>Junior Honors Student, Pursuing BS in Computer Science with Minors in Electrical Engineering & Mathematics</li>
-            <li>Financed 100% of college education through merit scholarship as <a style="font-size: 16px" 
-                href ="https://brownfound.org">Brown Foundation</a> Scholar.</li>
-        </ul>
-        <section class="content page3-layout">
-            <div class="left-column">
-                <h4>Languages & Software Skills</h4>
-                <ul>
-                    <li>C/C++</li>
-                    <li>Python</li>
-                    <li>Java</li>
-                    <li>Embedded Software in C</li>
-                    <li>Ladder Logic/PLC Programming</li>
-                    <li>Computer Vision - UNET/ResNet/EGANet Architectures</li>
-                </ul>
-                <h4>Other Skills</h4>
-                <ul>
-                    <li>Fluent in Spanish</li>
-                    <li>Microelectronics</li>
-                    <li>PCB Design & Validation</li>
-                    <li>CAD Design</li>
-                    <li>Automotive Engineering</li>
-                </ul>
-            </div>
-            <div class="right-column">
-                <h4>Research Experience</h4>
-                <ul>
-                    <li><strong>Texas A&M Cybersecurity Center - SCADA Testbed</strong>
-                        <ul>
-                            <li>Design ICS and SCADA systems to model industrial processes through PLC projects.</li>
-                            <li>Contributed to the development of ML models for intrusion/anomaly detection.</li>
-                        </ul>
-                    </li>
-                    <li><strong>Texas A&M Sketch Recognition Laboratory</strong>
-                        <ul>
-                            <li>Worked with PhD student to test & evaluate modern computer vision models.</li>
-                        </ul>
-                    </li>
-                </ul>
-            
-                <h4>Activities On Campus</h4>
-                <ul>
-                    <li><strong>Texas A&M Solar Car Racing Team</strong>
-                        <ul>
-                            <li>Worked with CAN bus, Microelectronics, PCB design & verification in racing.</li>
-                            <li>Finished 7th of 42 teams in the American Solar Challenge.</li>
-                        </ul>
-                    </li>
-                    <li><strong>TAMU Datathon</strong>
-                        <ul>
-                            <li>Developed a model using PyTorch to make predictions for a social media startup.</li>
-                            <li>Familiarized with modern AI concepts such as GPTs, tokenization, self-attention, etc.</li>
-                        </ul>
-                    </li>
-                    <li><strong>VICEROY Scholar</strong>
-                        <ul>
-                            <li>Virtual Institutes for Cyber and Electromagnetic Spectrum Research and Employ.</li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </section>
-    </main>
+    <section class="resume-section">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>Texas A&M University</strong> – B.S. Computer Science, Minors in Electrical Engineering & Mathematics</li>
+        <li>GPA: 3.761 | Class of 2026 | Honors Program | Craig & Galen Brown Foundation Scholar</li>
+        <li>Study Abroad: Swansea, Wales – Spring 2025</li>
+      </ul>
 
-    <footer>
-        <p>&copy; 2024 Ashwin Parameswaran</p>
-    </footer>
+      <h2>Technical Skills</h2>
+      <ul>
+        <li><strong>Languages:</strong> C++, Python, Java, HTML/CSS, JavaScript, React, PostgreSQL, Scheme, Assembly, Ladder Logic</li>
+        <li><strong>Technologies:</strong> PyTorch, AWS, GenAI/LLMs, Vision Transformers, CUDA, Linux, Altium, PCB Design</li>
+        <li><strong>Concepts:</strong> Machine Learning, Computer Vision, Embedded Systems, Cybersecurity, NLP, Data Science</li>
+      </ul>
 
-    <!-- JavaScript to Toggle Stylesheets -->
-    <script>
-        const toggleButton = document.getElementById('theme-toggle');
-        const aggieTheme = document.getElementById('aggie-theme');
-        const darkTheme = document.getElementById('dark-theme');
-    
-        function applySavedTheme() {
-            const savedTheme = localStorage.getItem('theme');
-    
-            if (savedTheme === 'dark') {
-                darkTheme.disabled = false;
-                aggieTheme.disabled = true;
-            } else {
-                darkTheme.disabled = true;
-                aggieTheme.disabled = false;
-            }
-        }
-    
-        applySavedTheme();
-    
-        toggleButton.addEventListener('click', () => {
-            if (darkTheme.disabled) {
-                darkTheme.disabled = false;
-                aggieTheme.disabled = true;
-                localStorage.setItem('theme', 'dark');
-            } else {
-                darkTheme.disabled = true;
-                aggieTheme.disabled = false;
-                localStorage.setItem('theme', 'aggie');
-            }
-        });
-    </script>
+      <h2>Experience</h2>
+      <ul>
+        <li><strong>VICEROY MAVEN – Griffiss Institute / AFRL</strong><br />
+          Intern for classified AI-based OSINT projects; developing two research papers in AI for intelligence pipelines.
+        </li>
+        <li><strong>ENDEAVR Institute – Autonomous Driving Research Intern</strong><br />
+          Developed remote software tools for autonomous emergency vehicles; contributed to field-deployable vision systems.
+        </li>
+        <li><strong>IDRT – Disaster Image Analytics</strong><br />
+          Researched AI for classifying disaster damage using vision + generative text techniques; worked in multidisciplinary teams.
+        </li>
+        <li><strong>Texas A&M Sketch Recognition Lab</strong><br />
+          Computer vision research on segmentation architectures (UNet, EGANet, MEGANet); foundational work for senior thesis.
+        </li>
+      </ul>
 
+      <h2>Organizations & Activities</h2>
+      <ul>
+        <li><strong>Texas A&M Solar Car Racing Team</strong> – Electronics & Strategy | 7th in 2024 American Solar Challenge</li>
+        <li><strong>Aggie Data Science Club</strong> – Built vehicle telemetry for TAMU Formula Electric Team</li>
+        <li><strong>VICEROY Scholar</strong> – Coursework in cybersecurity, cryptography, and defense AI</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ashwin Parameswaran</p>
+  </footer>
+
+  <script src="scripts/animate.js"></script>
 </body>
 </html>

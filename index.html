@@ -1,102 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ashwin Parameswaran's Webpage</title>
-    
-    <!-- Default Dark Mode -->
-    <link rel="stylesheet" href="css/darkmode.css" id="dark-theme">
-
-    <!-- Aggie Mode (Initially Disabled) -->
-    <link rel="stylesheet" href="css/aggiemode.css" id="aggie-theme" disabled>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ashwin Parameswaran</title>
+    <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
     <header>
         <h1>Howdy! I'm Ashwin Parameswaran.</h1>
-        <h3>Texas A&M Computer Science '26</h3>
+        <h3>Texas A&M Computer Science '26 | Honors Student</h3>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="projects.html">Projects</a></li>
                 <li><a href="resume.html">Resume</a></li>
                 <li><a href="service.html">Service</a></li>
-                <li><a href="ai.html">AI Insights</a></li>
+                <li><a href="honors.html">Honors</a></li>
             </ul>
         </nav>
     </header>
 
-    <button id="theme-toggle" class="btn center-button">Hey, what does this do?</button>
+    <main class="content">
+        <section class="intro">
+            <div class="text">
+                <h2>About Me</h2>
+                <p>
+                    I’m a driven and curious engineer studying Computer Science with minors in Electrical Engineering and Mathematics at Texas A&M University. I'm passionate about AI, computer vision, and building intelligent systems that blend software, embedded design, and real-world impact.
+                </p>
+                <p>
+                    My journey includes research with the TAMU Sketch Recognition Lab (SRL), a summer abroad studying Brain-Inspired AI in Swansea, Wales, and internships with AFRL and the VICEROY MAVEN Program where I developed AI-driven OSINT pipelines for national security. I also contributed to the TAMU Solar Car Racing Team, competing in the 2024 American Solar Challenge.
+                </p>
+                <p>
+                    I thrive at the intersection of curiosity and engineering. My goal? Build cool things that solve real problems — and understand how they work, deeply.
+                </p>
+                <div class="links">
+                    <a href="projects.html" class="btn">Explore My Work</a>
+                    <a href="honors.html" class="btn secondary">Read My Honors Reflection</a>
+                    <a href="https://github.com/AshRP03" class="btn secondary" target="_blank">GitHub</a>
+                </div>
+            </div>
+            <div class="images">
+                <img src="images/profile-abroad.jpg" alt="Ashwin in Wales" />
+                <img src="images/solarcar.jpg" alt="Solar Car Team Finish Line" />
+            </div>
+        </section>
 
-    <main>
-        <section class="content page1-layout">
-            <div class="left-column">
-                <h1>About Me</h1>
-                <p>My name is Ashwin, and I am an aspiring developer & currently a student at Texas A&M University, 
-                    part of the Fightin' Texas Aggie Class of 2026! I study Computer Science with a double minor in 
-                    Electrical Engineering and Mathematics, supplementing the versatility of the skills I 
-                    gain in Computer Science with some of the more hands-on engineering prowess from Electrical Engineering. 
-                    More to that fact are the organizations and research that I am a part of, including my reserach role
-                    as an Industrial Control Systems Engineer at the TAMU Cybersecurity Center, my work with a PhD. student
-                    at the Sketch Recognition Laboratory, and the TAMU Solar Car Racing Team. You can read more about these
-                    on my other pages, and checkout my <a style="font-size: 16px" href ="https://github.com/AshRP03">github</a>!
-                </p>
-                <h3>Here are some pictures of my experiences so far!</h3>
-                <img src="./images/IMG_6163.jpeg" style="width: 155px; height: 205px;">
-                <img src="./images/IMG_0305.jpeg" style="width: 155px; height: 205px;">
-                <img src="./images/IMG_0098.jpeg" style="width: 155px; height: 205px;">
-                <img src="./images/IMG_7965.JPG" style="width: 155px; height: 205px;">
-                <img src="./images/IMG_9831.jpeg" style="width: 255px; height: 205px;">
-            </div>
-            <div class="right-column">
-                <h3>What Did I Do This Summer?</h3>
-                <p>This Summer was quite the eventful one. I took part in the American Solar Challenge with the <a style="font-size: 16px" 
-                    href ="https://github.com/suryajasper/Post-Approval-Prediction">TAMU Solar Car Racing Team</a>
-                    . This is what we looked like crossing the finish line is Casper, Wyoming!
-                </p>
-                <img src="./images/IMG_0428.jpeg" style="width:325px;height: 216px;">
-                <h3>More updates soon!</h3>
-            </div>
+        <section class="update">
+            <h2>Summer Snapshot</h2>
+            <p>
+                This summer, I interned with the Griffiss Institute and AFRL, contributing to two research publications in AI-powered OSINT. I also traveled across the UK and Europe, studying advanced AI and continuing remote research with SRL and IDRT.
+            </p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Ashwin Parameswaran</p>
+        <p>&copy; 2025 Ashwin Parameswaran</p>
     </footer>
 
-    <script>
-        const toggleButton = document.getElementById('theme-toggle');
-        const aggieTheme = document.getElementById('aggie-theme');
-        const darkTheme = document.getElementById('dark-theme');
-    
-        function applySavedTheme() {
-            const savedTheme = localStorage.getItem('theme');
-    
-            if (savedTheme === 'dark') {
-                darkTheme.disabled = false;
-                aggieTheme.disabled = true;
-            } else {
-                darkTheme.disabled = true;
-                aggieTheme.disabled = false;
-            }
-        }
-    
-        applySavedTheme();
-    
-        toggleButton.addEventListener('click', () => {
-            if (darkTheme.disabled) {
-                darkTheme.disabled = false;
-                aggieTheme.disabled = true;
-                localStorage.setItem('theme', 'dark');
-            } else {
-                darkTheme.disabled = true;
-                aggieTheme.disabled = false;
-                localStorage.setItem('theme', 'aggie');
-            }
-        });
-    </script>
-
+    <script src="scripts/animate.js"></script>
 </body>
 </html>

@@ -1,109 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ashwin Parameswaran's Website</title>
-    
-    <!-- Default Dark Mode -->
-    <link rel="stylesheet" href="css/darkmode.css" id="dark-theme">
-
-    <!-- Aggie Mode (Initially Disabled) -->
-    <link rel="stylesheet" href="css/aggiemode.css" id="aggie-theme" disabled>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Service & Mentorship – Ashwin Parameswaran</title>
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-    <header>
-        <h1>Howdy! I'm Ashwin Parameswaran.</h1>
-        <h3>Texas A&M Computer Science '26</h3>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="service.html">Service</a></li>
-                <li><a href="ai.html">AI Insights</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <h1>Service & Mentorship</h1>
+    <h3>Giving Back Through Guidance and Impact</h3>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="service.html">Service</a></li>
+        <li><a href="honors.html">Honors</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <button id="theme-toggle" class="btn center-button">Hey, what does this do?</button>
+  <main class="content">
+    <section class="service-section">
+      <h2>Mentorship Through the Brown Foundation</h2>
+      <p>
+        As a Craig & Galen Brown Foundation Scholar, I’ve had the privilege of mentoring incoming freshmen scholars as they transition into college life. Whether it’s offering advice about coursework, research, or navigating campus, my goal is to help others find confidence, community, and direction early in their college experience.
+      </p>
+      <p>
+        I've learned that mentorship is just as valuable for the mentor as it is for the mentee. Listening to fresh perspectives keeps me grounded and reflective. It’s helped me grow as a communicator and leader, reinforcing the importance of empathy, patience, and collaboration.
+      </p>
+    </section>
 
-    <main>
-        <section class="content page4-layout">
-            <div class="left-column">
-            <h1>Service & Initiative</h1>
-                <p>
-                    Selfless service is one of the Aggie core values, and I am committed to demonstrating this in both my professional 
-                    and personal life. As a recipient of a full scholarship through the Craig & Galen Brown Foundation, I have the privilege 
-                    of giving back to the community by mentoring incoming freshmen who are also beneficiaries of this program. This role has 
-                    provided me the opportunity to guide students who are just beginning their college journey, helping them adjust to 
-                    university life, explore academic and extracurricular opportunities, and develop strategies for success. Through this 
-                    experience, I’ve not only honed my skills as a mentor but have also grown in unexpected ways.
-                </p>
-                <p>
-                    One of the most valuable lessons I’ve learned is that mentorship is a two-way street. While I provide guidance and 
-                    dvice based on my experiences, I have found that I also learn from those I mentor. These freshmen often bring fresh 
-                    perspectives and ideas, reminding me that learning is a continuous process that doesn’t depend solely on experience. 
-                    This exchange of knowledge has shaped my approach to leadership and teamwork, reinforcing my belief in the importance 
-                    of listening and collaboration.
-                </p>
-                <p>
-                    Outside of my scholarship organization, I am passionate about using my technical skills for the greater good. My studies 
-                    in computer science and involvement in various research and engineering projects have allowed me to contribute to 
-                    innovations in areas like automation and AI, particularly in the automotive sector. By combining my technical expertise 
-                    with a desire to serve others, I hope to create solutions that not only push boundaries but also make a meaningful impact 
-                    on those around me. This commitment to service will remain a core aspect of my career and life moving forward.
-                </p>
-            </div>
-            <div class="right-column">
-                <h3>What Did I Do This Summer?</h3>
-                <p>This Summer was quite the eventful one. I took part in the American Solar Challenge with the <a style="font-size: 16px" 
-                    href ="https://github.com/suryajasper/Post-Approval-Prediction">TAMU Solar Car Racing Team</a>
-                    . This is what we looked like crossing the finish line is Casper, Wyoming!
-                </p>
-                <img src="../images/IMG_0428.jpeg" style="width:325px;height: 216px;">
-            </div>
-        </section>
-    </main>
+    <section class="service-section">
+      <h2>Technical Outreach</h2>
+      <p>
+        My passion for service also extends into the technical space. I’ve contributed to projects that use AI, computer vision, and embedded systems to solve real problems — from disaster resilience to autonomous response systems. Each of these efforts, at their core, aim to build tools that help people and improve systems that matter.
+      </p>
+      <p>
+        Service isn’t just about volunteering. It’s about applying your skills and values toward something meaningful. As I continue into advanced research and eventually my professional career, I hope to remain rooted in this mindset.
+      </p>
+    </section>
 
-    <footer>
-        <p>&copy; 2024 Ashwin Parameswaran</p>
-    </footer>
+    <section class="service-section">
+      <h2>Core Commitment</h2>
+      <p>
+        Service is one of the Aggie Core Values, and it’s a guiding principle I intend to carry forward. Whether through mentorship, engineering innovation, or simply being someone others can rely on, I aim to leave every space better than I found it — and help others do the same.
+      </p>
+    </section>
+  </main>
 
-    <!-- JavaScript to Toggle Stylesheets -->
-    <script>
-        const toggleButton = document.getElementById('theme-toggle');
-        const aggieTheme = document.getElementById('aggie-theme');
-        const darkTheme = document.getElementById('dark-theme');
-    
-        function applySavedTheme() {
-            const savedTheme = localStorage.getItem('theme');
-    
-            if (savedTheme === 'dark') {
-                darkTheme.disabled = false;
-                aggieTheme.disabled = true;
-            } else {
-                darkTheme.disabled = true;
-                aggieTheme.disabled = false;
-            }
-        }
-    
-        applySavedTheme();
-    
-        toggleButton.addEventListener('click', () => {
-            if (darkTheme.disabled) {
-                darkTheme.disabled = false;
-                aggieTheme.disabled = true;
-                localStorage.setItem('theme', 'dark');
-            } else {
-                darkTheme.disabled = true;
-                aggieTheme.disabled = false;
-                localStorage.setItem('theme', 'aggie');
-            }
-        });
-    </script>
+  <footer>
+    <p>&copy; 2025 Ashwin Parameswaran</p>
+  </footer>
 
+  <script src="scripts/animate.js"></script>
 </body>
 </html>
