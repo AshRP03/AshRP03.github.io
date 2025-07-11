@@ -5,53 +5,182 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Honors Reflection – Ashwin Parameswaran</title>
   <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .hero-section {
+      position: relative;
+      width: 1100px;
+      height: 300px;
+      z-index: 0;
+      margin: 0 auto;
+    }
+
+    .hero-bg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 65%;
+      display: block;
+      filter: brightness(0.75);
+    }
+
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      color: rgba(255, 255, 255, 0.195);
+      z-index: 2;
+    }
+
+    .hero-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      width: 100%;
+      position: relative;
+    }
+
+    .hero-content {
+      position: absolute;
+      top: 40px;
+      left: 40px;
+      z-index: 3;
+      color: rgb(255, 255, 255);
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+    }
+
+    .hero-content h1 {
+      font-size: 2.6rem;
+      margin: 0 0 10px 0;
+      font-weight: bold;
+      color: rgba(255, 255, 255, 0.638);
+      text-align: left;
+    }
+
+    .hero-content p {
+      font-size: 1.1rem;
+      color: rgba(255, 255, 255, 0.85);
+      margin: 0;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.653);
+      text-align: left;
+    }
+
+    .hero-nav {
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .hero-nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      gap: 30px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .hero-nav a {
+      text-decoration: none;
+      font-weight: 600;
+      padding: 5px 30px;
+      border-radius: 20px;
+      color: #ffffffd8;
+      background: rgba(255, 255, 255, 0.214);
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.653);
+      backdrop-filter: blur(10px);
+      transition: background 0.3s ease;
+      white-space: nowrap;
+    }
+
+    .hero-nav a:hover {
+      background: rgba(255, 255, 255, 0.363);
+    }
+
+    main.content {
+      padding: 40px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .honors-block {
+      background-color: #2C2C2C;
+      padding: 30px;
+      border-radius: 10px;
+      margin-bottom: 40px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Honors Program Reflection</h1>
-    <h3>Texas A&M University Honors | Annual ePortfolio</h3>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="service.html">Service</a></li>
-        <li><a href="ai.html">AI Insights</a></li>
-        <li><a href="honors.html">Honors</a></li>
-      </ul>
-    </nav>
+  <header class="hero-section">
+    <img src="images/tamu.jpeg" alt="Honors Reflection Banner" class="hero-bg"/>
+    <div class="hero-overlay">
+      <nav class="hero-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="honors.html">Honors</a></li>
+          <li><a href="studyabroad.html">Study Abroad</a></li>
+        </ul>
+      </nav>
+      <div class="hero-content" style="width: 400px;">
+        <h1 style="font-size: 2.2rem; margin-bottom: 8px; font-weight: bold; color: rgba(255, 255, 255, 0.716); text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.701); text-align: left;">Honors Reflection</h1>
+        <p style="font-size: 1rem; line-height: 1.4; color: rgba(255, 255, 255, 0.751); text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.653); text-align: left;">Connecting intellect, integrity, and impact through service and reflection.</p>
+      </div>
+    </div>
   </header>
 
   <main class="content">
     <section class="honors-block">
       <h2>What?</h2>
       <p>
-        I'm a Computer Science major with minors in Electrical Engineering and Mathematics, driven by a passion for intelligent systems and real-world problem-solving. My academic interests lie in artificial intelligence, computer vision, and embedded software systems, and I’ve pursued those passions through research roles at Texas A&M and beyond. 
-        These include my work at the Sketch Recognition Lab (SRL), contributions to the Institute for a Disaster Resilient Texas (IDRT), and most recently, a classified internship with the VICEROY MAVEN Program in partnership with AFRL.
+        I'm a Computer Science major with minors in Electrical Engineering and Mathematics, drawn to AI, computer vision, and embedded systems. From research roles in the Sketch Recognition Lab to national security internships through the VICEROY MAVEN program, I've pursued opportunities where technology meets real-world challenge. I studied abroad in Wales, built solar cars, and presented research on disaster-resilient systems.
       </p>
       <p>
-        Study abroad in Swansea, Wales, further expanded my worldview, exposing me to different teaching methods and cultural perspectives while continuing my research and coursework in AI. I’ve also been an active member of the Solar Car Racing Team, applying theory to engineering challenges in real-time.
+        Through these experiences, I’ve developed technical depth and curiosity. I’m proud of projects in video segmentation, zero-trust inference, and intelligent systems for cyber-physical applications. I’ve taken on leadership in research, contributed to conference presentations, and grown across both hard and human-centered skills.
       </p>
     </section>
 
     <section class="honors-block">
       <h2>So What?</h2>
       <p>
-        These experiences have helped me grow not only as an engineer, but as a thinker. Working on diverse interdisciplinary teams has made me more reflective, communicative, and adaptable. Brain-Inspired AI and AI coursework abroad challenged me to consider different educational paradigms and perspectives on intelligence itself.
+        These moments weren’t just about skill—they changed how I think. Collaborating across disciplines has made me a more thoughtful builder and better listener. I’ve gained perspective, cultural awareness, and a deeper belief that good engineering is rooted in empathy. 
       </p>
       <p>
-        I’ve discovered that innovation is driven as much by curiosity as it is by practicality. Whether iterating on segmentation models or tuning generative pipelines for OSINT, I’ve found joy in building, learning, and problem-solving with intention. I now see myself not just as a builder, but as a researcher who questions how things work and why they matter.
+        I’ve learned that research isn't just technical—it's reflective. Whether solving image inference problems or mentoring incoming students, I’ve seen how impact comes from intention. These experiences remind me that growth is nonlinear, and value is found in the connections between systems, people, and purpose.
       </p>
     </section>
 
     <section class="honors-block">
       <h2>Now What?</h2>
       <p>
-        I plan to return to SRL to complete my undergraduate thesis on intelligent vision models, and finish my two research publications with AFRL. These research experiences will position me well to apply to competitive graduate schools like Stanford and UC Berkeley for a master's in Computer Science. 
+        My goal is to pursue a graduate degree in computer science at institutions like Stanford or Berkeley. I want to continue my work in intelligent vision systems and push boundaries in secure, trustworthy AI. As I return to SRL for my thesis and complete two AFRL publications, I’ll continue building the confidence and skill needed for that next step.
       </p>
       <p>
-        Long term, I aspire to work at the intersection of AI and automotive systems — applying intelligent software to embedded and real-time applications. My next step is to continue strengthening my technical foundations, deepening my research credentials, and preparing for the challenges and opportunities ahead. 
-        I hope to always stay curious, and always keep building.
+        I also plan to stay grounded in service—through mentorship, outreach, and applying my skills to problems that matter. Whether through resilient infrastructure, future cars, or secure AI systems, I hope to help engineer a better world.
+      </p>
+    </section>
+
+    <section class="honors-block">
+      <h2>Mentorship & Service</h2>
+      <p>
+        As a Craig & Galen Brown Foundation Scholar, I’ve mentored incoming freshmen, helping them navigate academics, research, and college life. These conversations have grounded me, and taught me the value of listening and guidance.
+      </p>
+      <p>
+        My technical work also aligns with service—using AI for disaster resilience, autonomous response, and other public-good projects. I believe service includes any work that lifts others or strengthens the systems we all depend on.
       </p>
     </section>
   </main>
@@ -59,7 +188,5 @@
   <footer>
     <p>&copy; 2025 Ashwin Parameswaran</p>
   </footer>
-
-  <script src="scripts/animate.js"></script>
 </body>
 </html>
