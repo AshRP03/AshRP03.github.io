@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects – Ashwin Parameswaran</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+      .projects-wrapper {
+        padding: 40px 20px;
+        background-color: #1e1e1e;
+      }
+
+      .hero-nav a {
+        text-decoration: none;
+        font-weight: 600;
+        padding: 5px 30px;
+        border-radius: 20px;
+        color: #ffffffd8;
+        background: rgba(255, 255, 255, 0.214);
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.653);
+        backdrop-filter: blur(10px);
+        transition: background 0.3s ease;
+        white-space: nowrap;
+      }
+      .hero-nav a:hover {
+        background: rgba(255, 255, 255, 0.363);
+      }
+
+      .project-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+      }
+
+      .project-card {
+        background-color: #2c2c2c;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        width: 360px;
+        padding: 20px;
+        color: #f0f0f0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: transform 0.2s ease;
+      }
+
+      .project-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .project-card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 15px;
+      }
+
+      .project-card h3 {
+        margin: 10px 0 10px;
+        font-size: 1.2rem;
+        color: #ffffffd9;
+      }
+
+      .project-card p {
+        font-size: 0.95rem;
+        color: #ccc;
+        margin-bottom: 15px;
+      }
+
+      .badge {
+        display: inline-block;
+        background-color: #444;
+        color: #eee;
+        font-size: 0.75rem;
+        padding: 4px 10px;
+        border-radius: 20px;
+        margin: 2px 5px 8px 0;
+      }
+
+      .project-meta {
+        margin-top: auto;
+      }
+
+      .project-meta a {
+        text-decoration: none;
+        font-weight: 600;
+        color: #9ecfff;
+        font-size: 0.9rem;
+        transition: color 0.2s ease;
+      }
+
+      .project-meta a:hover {
+        color: #d4e9ff;
+      }
+    </style>
+</head>
+<body>
+    <header class="hero-section" style="position: relative; width: 1100px; height: 300px; z-index: 0; margin: 0 auto;">
+      <img src="images/redbull.jpeg" alt="Projects Banner" class="hero-bg" style="width: 100%; height: 100%; object-fit: cover; object-position: center 50%; display: block; filter: brightness(0.75);" />
+      <div class="hero-overlay" style="position: absolute; top: 0; left: 0; height: 100%; width: 100%; padding: 30px; display: flex; flex-direction: column; justify-content: space-between; color: rgba(255, 255, 255, 0.195); z-index: 2;">
+        <nav class="hero-nav" style="position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%);">
+          <ul style="display: flex; justify-content: center; list-style: none; gap: 30px; padding: 0; margin: 0;">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="honors.html">Reflections</a></li>
+            <li><a href="studyabroad.html">Study Abroad</a></li>
+          </ul>
+        </nav>
+          <div class="hero-content" style="position: absolute; top: 40px; left: 30px; z-index: 3; color: rgb(255, 255, 255); text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6); max-width: 500px;">
+            <h1 style="font-size: 2.2rem; margin-bottom: 8px; font-weight: bold; color: rgba(255, 255, 255, 0.716); text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.701); text-align: left;">Projects & Research</h1>
+            <p style="font-size: 1rem; line-height: 1.4; color: rgba(255, 255, 255, 0.751); text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.653); text-align: left;">A glimpse into my research and engineering work: <br /> solving real problems with AI, <br /> embedded systems, and applied vision.</p>
+          </div>
+      </div>
+    </header>
+
+    <main class="content" style="max-width: 1100px; margin: 0 auto;">
+        <section class="projects-wrapper">
+            <div class="project-grid">
+                <article class="project-card">
+                    <img src="images/MAVEN.jpeg" alt="AFRL Project" />
+                    <h3>Multimodal AI on OSINT & <br /> Cyber Ops (VICEROY MAVEN)</h3>
+                    <p>Designed zero-trust inference pipelines for image-to-location geolocation. Focused on privacy-preserving vision models and LLM-based intel synthesis.</p>
+                    <div class="badge">Cyber Ops</div>
+                    <div class="badge">LLM & Vision/Language Inference</div>
+                    <div class="badge">Security & Privacy</div>
+                </article>
+
+                <article class="project-card">
+                    <img src="images/SRL.png" alt="MEGANet Research" />
+                    <h3>TAMU Sketch Recognition Lab – Medical Imaging with MEGANet</h3>
+                    <p>Explored edge-guided attention networks for tumor segmentation in CT/MRI images. Tuned Res2Net variants for clinical image interpretation and diagnostic AI pipelines.</p>
+                    <div class="badge">PyTorch</div>
+                    <div class="badge">Medical Imaging</div>
+                    <div class="badge">Attention Networks</div>
+                    <div class="project-meta"><a href="https://github.com/UARK-AICV/MEGANet" target="_blank">View Original GitHub Repo</a></div>
+                </article>
+
+                <article class="project-card">
+                    <img src="images/solarcarsunset.jpeg" alt="Solar Car Team" />
+                    <h3>TAMU Solar Car Racing Team</h3>
+                    <p>Contributed to PCB validation, microelectronics, and telemetry systems for a national solar endurance race car. Part of the top-10 rookie team at ASC 2024.</p>
+                    <div class="badge">Telemetry</div>
+                    <div class="badge">PCB Design</div>
+                    <div class="badge">Sensor Fusion</div>
+                </article>
+
+                <article class="project-card">
+                    <img src="images/IDRT.jpeg" alt="Disaster AI" />
+                    <h3>IDRT – Disaster Image Analytics</h3>
+                    <p>Built vision-language pipelines for assessing disaster damage in aerial images. Used GenAI and transformers to classify severity and assist in emergency planning.</p>
+                    <div class="badge">Vision/Language Analytics</div>
+                    <div class="badge">Image Inference</div>
+                    <div class="badge">Google Street View API</div>
+                </article>
+
+                <article class="project-card">
+                    <img src="images/endeavr.jpeg" alt="ENDEAVR Project" />
+                    <h3>ENDEAVR – Autonomous Emergency Vehicle</h3>
+                    <p>Developed software to enable camera-based remote control and inference for rescue vehicle platforms. Integrated embedded systems with live AI perception.</p>
+                    <div class="badge">Embedded AI</div>
+                    <div class="badge">ROS</div>
+                    <div class="badge">Python</div>
+                    <div class="project-meta"><a href="https://github.com/RetroPilot/teledrive_demo" target="_blank">Autonomous Driving Repo</a></div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Ashwin Parameswaran</p>
+    </footer>
+
+    <script src="scripts/animate.js"></script>
+</body>
+</html>
