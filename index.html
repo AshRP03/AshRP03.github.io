@@ -5,215 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ashwin Parameswaran</title>
   <link rel="stylesheet" href="css/styles.css" />
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #1e1e1e;
-      color: #f0f0f0;
-    }
-
-    .hero-section {
-      position: relative;
-      width: 1100px;
-      height: 300px;
-      z-index: 0;
-      margin: 0 auto;
-    }
-
-    .hero-bg {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center 75%;
-      display: block;
-      filter: brightness(0.75);
-    }
-
-    .hero-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      padding: 30px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      color: rgba(255, 255, 255, 0.195);
-      z-index: 2;
-    }
-    .hero-inner {
-      max-width: 900px;
-      margin: 0 auto;
-      width: 100%;
-      position: relative;
-    }
-
-    .hero-content {
-    position: absolute;
-    top: 40px;
-    left: 40px;
-    z-index: 3;
-    color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
-    }
-
-    .hero-content h1 {
-    font-size: 2.6rem;
-    margin: 0 0 10px 0;
-    font-weight: bold;
-    color: rgba(255, 255, 255, 0.638);
-    text-align: left;
-    }
-
-    .hero-content p {
-    font-size: 1.1rem;
-    color: rgba(255, 255, 255, 0.85);
-    margin: 0;
-    }
-
-    .hero-content h1 {
-      font-size: 2.2rem;
-      margin-bottom: 8px;
-    }
-
-    .hero-content p {
-      font-size: 1rem;
-      line-height: 1.4;
-      color: rgba(255, 255, 255, 0.645);
-      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.653);
-      text-align: left;
-    }
-
-    .hero-nav {
-      position: absolute;
-      bottom: 30px;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    .hero-nav ul {
-      display: flex;
-      justify-content: center;
-      list-style: none;
-      gap: 30px;
-      padding: 0;
-      margin: 0;
-    }
-
-    .hero-nav a {
-      text-decoration: none;
-      font-weight: 600;
-      padding: 5px 30px;
-      border-radius: 20px;
-      color: #ffffffd8;
-      background: rgba(255, 255, 255, 0.214);
-      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.653);
-      backdrop-filter: blur(10px);
-      transition: background 0.3s ease;
-      white-space: nowrap;
-    }
-
-    .hero-nav a:hover {
-      background: rgba(255, 255, 255, 0.363);
-    }
-
-    main.content {
-      padding: 40px;
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-
-    .two-column {
-      display: flex;
-      gap: 40px;
-      flex-wrap: wrap;
-    }
-
-    .left-col, .right-col {
-      flex: 1 1 400px;
-    }
-
-    .text-block, .quick-facts {
-      background-color: #2C2C2C;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-      margin-bottom: 40px;
-    }
-
-    .text-block img {
-      width: 100%;
-      height: auto;
-      margin-top: 20px;
-      border-radius: 8px;
-    }
-
-    .card-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-    }
-
-    .fact-card {
-      flex: 1 1 200px;
-      background-color: #3C3C3C;
-      padding: 15px;
-      border-radius: 8px;
-    }
-
-    .highlight-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      margin-top: 20px;
-    }
-
-    .highlight-grid img {
-      width: 100%;
-      max-width: 300px;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 10px;
-    }
-
-    .strip {
-      display: flex;
-      gap: 10px;
-      overflow-x: auto;
-      padding-bottom: 10px;
-    }
-
-    .strip img {
-      width: 250px;
-      height: 190px;
-      object-fit: cover;
-      border-radius: 8px;
-      flex-shrink: 0;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9rem;
-      color: #aaa;
-    }
-  </style>
 </head>
 <body>
+  <div class="page-wrapper">
   <header class="hero-section">
-    <img src="images/ringbanner.jpeg" alt="Switzerland Aggie Ring" class="hero-bg"/>
+    <img src="images/ringbanner.jpeg" alt="Switzerland Aggie Ring" class="hero-bg" style="object-position: center 70%;" />
     <div class="hero-overlay">
       <nav class="hero-nav">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="projects.html">Projects</a></li>
-          <li><a href="honors.html">Reflections</a></li>
+          <li><a href="honors.html">Honors</a></li>
           <li><a href="studyabroad.html">Study Abroad</a></li>
+          <li><a href="vision.html">Vision</a></li>
         </ul>
       </nav>
-      <div class="hero-content">
+      <div class="hero-content left-align">
         <h1>Howdy! I'm Ashwin <br />Parameswaran.</h1>
         <p>Engineer. Researcher. Pursuing meaning through <br />code, curiosity, and the machines that move us.</p>
       </div>
@@ -225,15 +32,13 @@
       <div class="left-col text-block">
         <h2>Who Am I?</h2>
         <p>I’m a Texas A&M Honors Computer Science major with minors in Electrical Engineering and Mathematics. 
-            Beyond computer science, I explore the world with the same curiosity that drives my engineering work: 
-            through history, music, and deep questions about how technology shapes us. Whether I'm in YouTube rabbit hole about ancient empires, 
-            reflecting on futurism in a sci-fi story, staying updated on the latest in the automotive industry, 
-            or standing trackside at an F1 circuit, I'm always chasing understanding. I believe in building with intention, 
-            guided by the questions: How does this work? How can I make it better? Can I create something new? 
-            Something that moves the world forward, starting with myself?</p>
+            Beyond computer science, I explore the world with the same curiosity that drives my engineering work—through history, music, and deep questions about how technology shapes us. 
+            Whether I’m in a YouTube rabbit hole about ancient empires, reflecting on futurism in a sci-fi story, staying updated on the latest in the automotive industry, 
+            or standing trackside at an F1 circuit, I’m always chasing understanding. I believe in building with intention, guided by the questions: 
+            How does this work? How can I make it better? Can I create something new? Something that moves the world forward, starting with myself?</p>
         <img src="images/proportrait.jpeg"
             alt="Ashwin Portrait"
-            style="height: 500px; width: 100%; max-width: 100%; object-fit: cover; object-position: center 20%; border-radius: 8px;" />
+            class="responsive-img portrait" />
       </div>
 
       <div class="right-col quick-facts">
@@ -241,7 +46,7 @@
         <div class="card-row">
           <div class="fact-card">
             <h3>Education</h3>
-            <p>B.S. in Computer Science, Texas A&M University<br />Minors in EE + Math <br /> Study Abroad: Swansea, UK</p>
+            <p>B.S. in Computer Science, Texas A&M University<br />Minors in EE + Math<br />Study Abroad: Swansea, UK</p>
           </div>
           <div class="fact-card">
             <h3>Skills</h3>
@@ -259,13 +64,12 @@
 
         <h2 style="margin-top: 40px;">Where Am I Right Now?</h2>
         <div class="highlight-grid">
-          <div style="max-width: 100%; width: 500px; height: 270px; overflow: hidden; border-radius: 10px; margin: 0 auto;">
-            <img src="images/viceroy.jpeg"
-                alt="VICEROY MAVEN Internship"
-                style="width: 200%; height: 120%; object-fit: cover; object-position: center 30%;" />
+          <div class="image-container">
+            <img src="images/viceroy.jpeg" alt="VICEROY MAVEN Internship" />
           </div>
           <p>
-            I’m currently interning as a VICEROY MAVEN research intern through the Griffiss Institute, working on privacy-preserving vision and LLM-based AI pipelines for national security. In the above image, I am with Dr. Ragsdale "Rags," founding director of the Texas A&M Cybersecurity Center and guest speaker at our West Point Trip.
+            I’m currently interning as a VICEROY MAVEN research intern through the Griffiss Institute, working on privacy-preserving vision and LLM-based AI pipelines for national security. 
+            In the above image, I am with Dr. Ragsdale "Rags," founding director of the Texas A&M Cybersecurity Center and guest speaker at our West Point Trip.
           </p>
         </div>
       </div>
@@ -281,7 +85,7 @@
     </section>
 
     <section class="travel-strip">
-      <h2 style="margin: 40px 0 20px;">College Highlights</h2>
+      <h2 class="strip-header">College Highlights</h2>
       <div class="strip">
         <img src="images/redbull.jpeg" alt="Red Bull Solar Team Event" />
         <img src="images/ring.jpeg" alt="Aggie Ring Day" />
@@ -294,5 +98,6 @@
   <footer>
     <p>&copy; 2025 Ashwin Parameswaran</p>
   </footer>
+  </div>
 </body>
 </html>

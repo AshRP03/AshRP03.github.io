@@ -5,166 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Study Abroad – Ashwin Parameswaran</title>
   <link rel="stylesheet" href="css/styles.css" />
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #1e1e1e;
-      color: #f0f0f0;
-    }
-
-    .hero-section {
-      position: relative;
-      width: 1100px;
-      height: 300px;
-      z-index: 0;
-      margin: 0 auto;
-    }
-
-    .hero-bg {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center 65%;
-      display: block;
-      filter: brightness(0.75);
-    }
-
-    .hero-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      padding: 30px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      color: rgba(255, 255, 255, 0.195);
-      z-index: 2;
-    }
-
-    .hero-content {
-      position: absolute;
-      top: 40px;
-      left: 40px;
-      z-index: 3;
-      color: white;
-      text-align: left;
-      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
-    }
-
-    .hero-content h1 {
-      font-size: 2.2rem;
-      margin-bottom: 8px;
-    }
-
-    .hero-content p {
-      font-size: 1rem;
-      line-height: 1.4;
-      color: rgba(255, 255, 255, 0.8);
-    }
-
-    .hero-nav {
-      position: absolute;
-      bottom: 30px;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    .hero-nav ul {
-      display: flex;
-      justify-content: center;
-      list-style: none;
-      gap: 30px;
-      padding: 0;
-      margin: 0;
-    }
-
-    .hero-nav a {
-      text-decoration: none;
-      font-weight: 600;
-      padding: 5px 30px;
-      border-radius: 20px;
-      color: #ffffffd8;
-      background: rgba(255, 255, 255, 0.214);
-      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.653);
-      backdrop-filter: blur(10px);
-      transition: background 0.3s ease;
-      white-space: nowrap;
-    }
-
-    .hero-nav a:hover {
-      background: rgba(255, 255, 255, 0.363);
-    }
-
-    main.content {
-      padding: 40px;
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-
-    .intro {
-      font-size: 1.1rem;
-      margin-bottom: 40px;
-    }
-
-    .trip-map {
-      text-align: center;
-      margin-bottom: 60px;
-    }
-
-    .trip-map img {
-      width: 100%;
-      max-width: 650px;
-      border-radius: 10px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.25);
-    }
-
-    .gallery-section {
-      margin-bottom: 60px;
-    }
-
-    .gallery-section h2 {
-      margin-bottom: 10px;
-      border-left: 5px solid #5ea3ec;
-      padding-left: 10px;
-    }
-
-    .gallery-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-    }
-
-    .gallery-grid img {
-      width: calc(33% - 10px);
-      height: 200px;
-      object-fit: cover;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    }
-
-    .reflection {
-      background: linear-gradient(145deg, #2C2C2C, #1e1e1e);
-      padding: 30px;
-      border-radius: 10px;
-      margin-bottom: 40px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
-      border-left: 5px solid #5ea3ec;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9rem;
-      color: #aaa;
-    }
-  </style>
 </head>
 <body>
+  <div class="page-wrapper">
   <header class="hero-section">
-    <img src="images/pins.jpeg" alt="Study Abroad Banner" class="hero-bg" style="object-position: center 27%;"/>
+    <img src="images/pins.jpeg" alt="Study Abroad Banner" class="hero-bg" style="object-position: center 27%;" />
     <div class="hero-overlay">
       <nav class="hero-nav">
         <ul>
@@ -172,12 +17,12 @@
           <li><a href="projects.html">Projects</a></li>
           <li><a href="honors.html">Honors</a></li>
           <li><a href="studyabroad.html">Study Abroad</a></li>
+          <li><a href="vision.html">Vision</a></li>
         </ul>
       </nav>
       <div class="hero-content">
         <h1>Study Abroad</h1>
-        <p>Exploring a Slice of Europe, but <br />
-            Through My Lens: Cars, Food, and History.</p>
+        <p>Exploring a Slice of Europe, but Through<br /> My Lens: Cars, Food, and History.</p>
       </div>
     </div>
   </header>
@@ -188,8 +33,13 @@
     </section>
 
     <section class="trip-map">
-      <img src="images/trip.jpeg" alt="Trip Map of Study Abroad Journey" />
+      <img src="images/abroad.png" alt="Trip Map of Study Abroad Journey" />
       <p style="margin-top: 10px;">From Wales to Western Europe, this map traces one of the most meaningful chapters of my life—of movement, memory, and meaning.</p>
+    </section>
+
+    <section class="gallery-section">
+      <h2>A World-Class Education, Outside the Classroom</h2>
+      <p>Traveling solo taught me more than independence. It taught me how to observe, how to listen, and how to reflect. Whether I was learning 4 different languages on Duolingo while travelling, wearing my Aggie Ring at the Ferrari factory, or navigating train stations with a sprained ankle in Monaco, I was always carrying a piece of home with me. These experiences deepened my love for the world, for culture, and for asking “why is this place the way it is, and how can I learn more?” It’s a chapter I’ll never forget.</p>
     </section>
 
     <section class="gallery-section">
@@ -197,7 +47,7 @@
       <p>From the baroque elegance of Vienna, the pastas of Rome, or the waffles of Brussels, these cities showcased tradition, creativity, and history.</p>
       <div class="gallery-grid">
         <img src="images/vienna.jpeg" alt="Vienna Architecture" />
-        <img src="images/rome.jpeg" alt="London Sights" />
+        <img src="images/rome.jpeg" alt="Rome Sights" />
         <img src="images/brussels.jpeg" alt="Brussels" />
       </div>
     </section>
@@ -230,14 +80,9 @@
       <p>Swansea was my home base, where studying, making friends, and enjoying everyday life in Wales brought a sense of balance to the adventure.</p>
       <div class="gallery-grid">
         <img src="images/swansea.jpeg" alt="Swansea University" />
-        <img src="images/breakfast.jpeg" alt="Swansea University" />
-        <img src="images/wales.jpeg" alt="Swansea University" style="object-position: center 75%;" />
+        <img src="images/breakfast.jpeg" alt="Swansea Breakfast" />
+        <img src="images/wales.jpeg" alt="Welsh Coast" style="object-position: center 75%;" />
       </div>
-    </section>
-
-    <section class="reflection">
-      <h2>A World-Class Education, Outside the Classroom</h2>
-      <p>Traveling solo taught me more than independence. It taught me how to observe, how to listen, and how to reflect. Whether I was learning 4 different languages on Duolingo while travelling, wearing my Aggie Ring at the Ferrari factory, or navigating train stations with a sprained ankle in Monaco, I was always carrying a piece of home with me. These experiences deepened my love for the world, for culture, and for asking “why is this place the way it is, and how can I learn more?” It’s a chapter I’ll never forget.</p>
     </section>
 
     <section class="gallery-section">
@@ -247,9 +92,9 @@
         <img src="images/walesring.jpeg" alt="Aggie Ring in Wales" />
         <img src="images/beachring.jpeg" alt="Aggie Ring at the Beach" />
         <img src="images/cliffsring.jpeg" alt="Aggie Ring on Cliffs" />
-        <img src="images/swissring.jpeg" alt="Aggie Ring in Switzerland" style="object-position: center 70%;"/>
-        <img src="images/comoring.jpeg" alt="Aggie Ring in Lake Como" style="object-position: center 70%;"/>
-        <img src="images/monacoring.jpeg" alt="Aggie Ring in Monaco" style="object-position: center 80%;"/>
+        <img src="images/swissring.jpeg" alt="Aggie Ring in Switzerland" style="object-position: center 70%;" />
+        <img src="images/comoring.jpeg" alt="Aggie Ring in Lake Como" style="object-position: center 70%;" />
+        <img src="images/monacoring.jpeg" alt="Aggie Ring in Monaco" style="object-position: center 80%;" />
       </div>
     </section>
   </main>
@@ -257,5 +102,6 @@
   <footer>
     <p>&copy; 2025 Ashwin Parameswaran</p>
   </footer>
+  </div>
 </body>
 </html>
