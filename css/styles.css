@@ -112,7 +112,7 @@ footer {
   padding: 5px 30px;
   border-radius: 20px;
   color: #ffffffd8;
-  background: rgba(255, 255, 255, 0.135);
+  background: rgba(255, 255, 255, 0.12);
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.653);
   backdrop-filter: blur(10px);
   transition: background 0.3s ease;
@@ -120,7 +120,7 @@ footer {
 }
 
 .hero-nav a:hover {
-  background: rgba(255, 255, 255, 0.303);
+  background: rgba(255, 255, 255, 0.224);
 }
 
 /* ===== HOMEPAGE SECTIONS ===== */
@@ -336,4 +336,79 @@ footer {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
   background-color: #1e1e1e;
   border-radius: 8px;
+}
+
+/* Link/Button Glow */
+a:hover, .resume-button:hover {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 8px rgba(94, 163, 236, 0.5);
+  transition: all 0.3s ease;
+}
+
+/* Gradient Headings */
+.gradient-home {
+  background: linear-gradient(90deg, #fceabb, #ff8a00);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+.gradient-projects {
+  background: linear-gradient(90deg, #ffe600, #00e5ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.261); /* ✨ subtle glow */
+}
+.gradient-honors {
+  background: linear-gradient(90deg, #7ed9df, #70a1ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.213); /* ✨ subtle glow */
+}
+.gradient-abroad {
+  background: linear-gradient(90deg, #e29c92, #fcb045);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.213); /* ✨ subtle glow */
+}
+.gradient-vision {
+  background: linear-gradient(90deg, #6dd5fa, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  text-shadow: none;
+}
+
+/* Elevation on Hover */
+.text-block:hover, .quick-facts:hover, .fact-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+}
+
+/* Section Dividers */
+section {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding-bottom: 30px;
+  margin-bottom: 40px;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+::-webkit-scrollbar-thumb {
+  background: #5ea3ec;
+  border-radius: 10px;
 }
